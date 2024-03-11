@@ -38,7 +38,7 @@ def add_memory(prompt):
         [f"{i['role'].capitalize()}: {i['content']}" for i in st.session_state['messages'][look_back:]]
     ).replace('User', '\nUser'
               )
-    prompt_with_memory = f"user's request:{prompt}. --- \n以下はあなたとユーザーの過去の会話の記録です。: {memory} ---\n"
+    prompt_with_memory = f"user's request:{prompt}. --- \n以下はあなたとユーザーの過去の会話の記録です。やり取りは必ず日本語で行なって下さい。: {memory} ---\n"
     return prompt_with_memory
 
 
