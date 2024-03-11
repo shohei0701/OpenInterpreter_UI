@@ -43,27 +43,11 @@ def st_sidebar():
         # Section dedicated to navigate conversations
         conversation_navigation()
 
-        # Section dedicated to About Us
-        about_us()
 
     # except Exception as e:
     #     st.error(e)
 
 
-# About Us Section
-def about_us():
-    add_vertical_space(8)
-    html_chat = '<center><h5>🤗 Support the project with a donation for the development of new Features 🤗</h5>'
-    st.markdown(html_chat, unsafe_allow_html=True)
-    button = '<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="blazzmocompany" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>'
-    html(button, height=70, width=220)
-    iframe = '<style>iframe[width="220"]{position: absolute; top: 50%;left: 50%;transform: translate(-50%, -50%);margin:26px 0}</style>'
-    st.markdown(iframe, unsafe_allow_html=True)
-    add_vertical_space(2)
-    st.write('<center><h6>Made with ❤️ by <a href="mailto:blazzmo.company@gmail.com">BlazzByte</a></h6>',
-             unsafe_allow_html=True)
-    st.write('<center><h6>Contribution 🤝 by <a href="mailto:tranhoangnguyen03@gmail.com">Sergeant113</a></h6>',
-             unsafe_allow_html=True)
 
 # Setup OpenAI
 

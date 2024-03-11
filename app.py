@@ -1,6 +1,7 @@
 # Principal
 import streamlit as st
 import interpreter
+import io
 
 # st components
 from st_components.st_init import set_style
@@ -14,10 +15,11 @@ from openai import Model
 
 set_style()
 
-st.title("💬 Open Interpreter")
+st.title("🤖 Open Interpreter")
 
 init_session_states()
 
 st_sidebar()
 
 st_main()
+
