@@ -9,3 +9,6 @@ yfinance
 pandas_datareader
 requests
 beautifulsoup4
+nltk
+gensim
+sumy
